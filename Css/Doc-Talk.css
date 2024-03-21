@@ -97,8 +97,13 @@ nav {
 }
 
 .therapist-info img {
-    max-width: 200px;
+    max-width: 300px;
     border-radius: 50%;
+    padding-bottom: 50px;
+}
+
+.therapist-info h2 {
+    font-size: 35px;
 }
 
 .chat-section {
@@ -123,7 +128,7 @@ nav {
 
 .chat-messages .message {
     margin-bottom: 10px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     border-radius: 5px;
 }
 

@@ -24,16 +24,47 @@ document.addEventListener('DOMContentLoaded', function () {
         displayMessage(sender, message);
     });
 
+    // Define a map of questions and their related answers
+    const questionAnswerMap = {
+        'feeling overwhelmed': "It's common to feel overwhelmed at times. Let's talk more about what's been on your mind.",
+        'struggling with work deadlines': 'Work-related stress can be challenging. Let\'s discuss strategies to manage your workload more effectively.',
+        'trouble sleeping': 'Difficulty sleeping is often linked to stress and anxiety. Let\'s explore relaxation techniques to help you get better rest.',
+        // Add more question-answer pairs as needed
+    };
+
     // Handle sending a message
-    sendButton.addEventListener('click', () => {
-        const message = messageInput.value.trim();
+    function sendMessage() {
+        const message = messageInput.value.trim().toLowerCase(); // Convert input to lowercase for case insensitivity
         if (message !== '') {
             displayMessage('user', message);
-            // Simulated therapist's reply 
-            setTimeout(() => {
-                displayMessage('therapist', 'I\'m here to listen. How can I assist you further?');
-            }, 1000);
+
+            // Check if the user's message matches a question in the map
+            const matchedAnswer = questionAnswerMap[message];
+            if (matchedAnswer) {
+                // If there's a matching question, display its related answer
+                setTimeout(() => {
+                    displayMessage('therapist', matchedAnswer);
+                }, 1000);
+            } else {
+                // If the user's message doesn't match any question, provide a vague reply
+                setTimeout(() => {
+                    displayMessage('therapist', 'I\'m here to assist you.');
+                }, 1000);
+            }
+            
             messageInput.value = '';
         }
+    }
+
+    // Handle sending a message on button click
+    sendButton.addEventListener('click', sendMessage);
+
+    // Handle sending a message on pressing Enter key
+    messageInput.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            sendMessage();
+        }
     });
+
+
 });
