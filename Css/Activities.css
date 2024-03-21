@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap'); 
+
+* {
+  font-family: 'Roboto',sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+nav img{
+  margin: 0 20px;
+}
+nav {
+  width: 100vw;
+  height: 100px;
+  background-color: rgb(93, 42, 55);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  text-align: center;
+  color: white;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  
+}
+nav ul li::after{
+  content: '';
+  background-color:  rgb(201,124,144);
+  
+  height: 3px;
+  width: 0;
+  display: block;
+  margin: auto;
+}
+nav ul li:hover::after{
+ transition: 0.5s ease-in-out;
+  width: 100%;
+}
+.authbutton button{
+  width: 150px;
+  height: 40px;
+  margin: 0px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(201,124,144);
+  
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+}
+.authbutton button:hover{
+  background-color: #f1dccd;
+  scale: 1.1;
+  color: black;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  z-index: 2;
+  background-color:  #f1dccd  ;
+  /* animation: bg-switch 60s linear infinite; */
+  /* background-image: url(backgroun.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+.text {
+  text-align: center;
+  margin: 10px;
+  margin-left: 50px;
+  justify-content: space-evenly;
+  flex-direction: column;
+  z-index: 2;
+}
+.writups span {
+  font-size: 25px;
+  font-weight: bold;
+}
+.writups{
+  margin-bottom: 50px;
+  padding: .1rem;
+}
+.text h1 {
+  font-size: 60px;
+}
+.activity-text{
+  animation: rainbow-text 5s linear infinite;
+  margin: 10px 0px;
+  font-weight: bold;
+}
+.Options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 2;
+  transition: 0.5s;
+}
+.option h1 {
+  font-size: 30px;
+}
+.option p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.option img {
+  width: 200px;
+  margin: 10px;
+  margin-bottom: 0px;
+}
+.image {
+  height: 80vh;
+  padding: 10px;
+  border-radius: 30px;
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-top: 50px;
+  width:auto;
+}
+a{
+  color: inherit;
+}
+.option {
+  margin: 10px 10px;
+  background-color: rgba(207,124,144);
+  transition: 0.5s;
+  height: 190px;
+  transition: 0.5s ease-in;
+  width: 220px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.Options:hover .option {
+  transform: scale(0.9);
+  transition: transform 0.5s, filter 0.5s ease, height 0.5s, width 0.5s;
+  filter: blur(5px);
+}
+
+.option:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0px 0px 20px black;
+  filter: blur(0px) !important;
+  z-index: 999;
+  height: 300px;
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: blur(10px);
+  z-index: 998;
+}
+.modal {
+  width: auto;
+  height: 0;
+  max-height: 90%;
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  right: 20px;
+  background-color: #f1dccd ;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0px 0px 100px black;
+  filter: blur(0px) !important;
+  border-radius: 10px;
+}
+.modalexit {
+  height: 100vh;
+}
+.pages {
+  background-color: antiquewhite;
+  width: 60%;
+  height: 80%;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px gray;
+  border-radius: 10px;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: aliceblue;
+  box-sizing: border-box;
+  vertical-align: top;
+  transition: 1s;
+  transform: translateY(0);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.page h1 {
+  margin: 0; 
+}
+
+#right {
+  width: 100px;
+  mix-blend-mode: color-burn;
+  position: relative;
+  left: -10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#left {
+  width: 80px;
+  mix-blend-mode: color-burn;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#right:hover,
+#left:hover {
+  scale: 1.1;
+}
+#right:active,
+#left:active {
+  scale: 0.9;
+}
+.exit {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 100px;
+  border: 5px solid black;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.exit::after {
+  content: "";
+  height: 6px;
+  width: 50px;
+  background-color: black;
+  display: block;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 33px;
+  left: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.exit::before {
+  content: "";
+  height: 6px;
+  width: 50px;
+  background-color: black;
+  display: block;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 33px;
+  left: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.exit:hover::after,
+.exit:hover::before {
+  scale: 1.1;
+  background-color: #660b0b;
+  filter: drop-shadow(0px 0px 10px #660b0b);
+}
+.exit:hover {
+  scale: 1.1;
+  border: 5px solid #660b0b;
+}
+.exit:active,
+.exit:active::after,
+.exit:active::before {
+  scale: 0.3;
+}
+
+.gamesimg {
+  width: auto;
+  height: 195px;
+  filter: drop-shadow(0px 0px 10px gray);
+}
+
+.playit {
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 0px 10px gray;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 20px;
+}
+.playit:hover {
+  background-color: rgba(207,124,144);
+  box-shadow: 0px 0px 20px rgba(207,124,144);
+  scale: 1.1;
+}
+.pause{
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 0px 10px gray;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 20px;
+}
+.pause:hover {
+  background-color: rgb(243, 104, 80);
+  box-shadow: 0px 0px 20px rgba(246, 88, 88, 0.896);
+  scale: 1.1;
+}
+.volume-up,.volume-down{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0px 0px 10px gray;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 20px;
+}
+.gamedesc {
+  font-size: 20px;
+}
+.gametitle {
+  color: rgb(29, 160, 160);
+}
+iframe{
+  width: 60vh;
+  height: 40vh;
+  border-radius: 20px;
+  margin: 10px;
+}
+.option-img{
+  width: 100px;
+  height: 135px;
+}
+
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: cadetblue;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 1000px;
+  }
+  .image {
+    height: auto;
+    padding: 10px;
+    border-radius: 30px;
+    margin-right: 50px;
+    width: 100vh;
+    position: absolute;
+    z-index: 1;
+    max-width: 100vh;
+    opacity: 0.8;
+    filter: blur(5px);
+  }
+}
+@keyframes rainbow-text{
+  0%{
+    color: rgb(255, 142, 142);
+    filter: drop-shadow(0px 0px 10px rgb(255, 142, 142));
+  }
+  20%{
+    color: rgb(241, 133, 241);
+    filter: drop-shadow(0px 0px 10px rgb(255, 142, 142));
+  }
+  40%{
+    color: pink;
+    filter: drop-shadow(0px 0px 10px pink);
+  }
+  60%{
+    color: rgb(250, 250, 142);
+    filter: drop-shadow(0px 0px 10px rgb(250, 250, 142));
+  }
+  80%{
+    color:rgb(156, 208, 247);
+    filter: drop-shadow(0px 0px 10px rgb(156, 208, 247));
+  }
+  100%{
+    color: rgb(253, 217, 217);
+    filter: drop-shadow(0px 0px 10px rgb(253, 217, 217));
+  }
+}
+@keyframes bg-switch{
+  0%{
+    background-color: aliceblue;
+  }
+  20%{
+    background-color: aqua;
+  }
+  40%{
+    background-color: aquamarine;
+  }
+  60%{
+    background-color: cadetblue;
+  }
+  80%{
+    background-color: cyan;
+  }
+  100%{
+    background-color: cornflowerblue;
+  }
+}
+body{
+  overflow-x: hidden;
+  background-color: #f1dccd;
+}

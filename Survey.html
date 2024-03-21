@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="../Css/Final Survey.css">
+</head>
+<body>
+    <nav>
+        <img width="100px" height="100px" src="/Final SIH/Images/Final Logo.png"  alt="logo" />
+        <ul>
+          <a href="../../index.html"><li>Home</li></a>
+          <a href="activitys.html"><li>Activities</li></a>
+          <a href="Final Journal.html"><li>Daily Journal</li></a>
+          <a href="Final Survey.html"><li>Self-Assessment</li></a>
+          <a href="Final Doc-Talk.html"><li>Doc Talk</li></a>
+          <a href="Final public-chat.html"><li>Chats</li></a>
+        </ul>
+        <div class="authbutton">
+          <a href="Final Login.html"><button id="login">Login</button></a>
+          <a href="Final Sign-up.html"><button id="signup">Sign-up</button></a>
+        </div>
+    </nav>
+
+<section class="container">
+    <header id="topic">Mental Health Survey Form</header>
+    <form class="form" action="#">
+        <br>
+        <label for="mental-health">Overall how would you rate your mental health?</label>
+        <br>
+        <div class="column">
+            <div class="select-box">
+                <select id="mental-health">
+                    <option value="" hidden>--select option--</option>
+                    <option>Very Good</option>
+                    <option>Good</option>
+                    <option>Average</option>
+                    <option>Not Sure</option>
+                </select>
+            </div>
+        </div>
+        <br>
+
+        <label for="talk-to-someone">Do you have someone you can talk to when you're feeling sad or upset?</label>
+        <br>
+        <div class="gender-box">
+            <input id="yes-talk" type="radio" name="disorder" value="1">
+            <label for="yes-talk">Yes</label>
+            <input id="no-talk" type="radio" name="disorder" value="2">
+            <label for="no-talk">No</label>
+        </div>
+        <br>
+
+        <label for="school-feeling">How do you feel about going to school?</label>
+        <br>
+        <div class="column">
+            <div class="select-box">
+                <select id="school-feeling">
+                    <option value="" hidden>--select option--</option>
+                    <option>I like it</option>
+                    <option>I'm okay with it</option>
+                    <option>I don't like it</option>
+                    <option>I hate it</option>
+                </select>
+            </div>
+        </div>
+        <br>
+
+        <label for="sleep-quality">How would you describe your sleep quality on a typical night?</label>
+        <br>
+        <div class="column">
+            <div class="select-box">
+                <select id="sleep-quality">
+                    <option value="" hidden>--select option--</option>
+                    <option>Excellent</option>
+                    <option>Good</option>
+                    <option>Fair</option>
+                    <option>Poor</option>
+                    <option>Very Poor</option>
+                </select>
+            </div>
+        </div>
+        <br>
+
+        <label for="hours-sleep">How many hours of sleep do you typically get per night on average?</label>
+        <br>
+        <div class="input-box">
+            <input id="number" placeholder="Enter number" type="number">
+        </div>
+        <br>
+
+        <label for="physical-activity">Do you engage in regular physical activity and a balanced diet?</label>
+        <br>
+        <div class="column">
+            <div class="select-box">
+                <select id="physical-activity">
+                    <option value="" hidden>--select option--</option>
+                    <option>Yes, regularly</option>
+                    <option>Occasionally</option>
+                    <option>Rarely</option>
+                    <option>Never</option>
+                </select>
+            </div>
+        </div>
+        <br>
+
+        <label for="hobbies">Are there any activities or hobbies that make you feel really happy or excited?</label>
+        <div class="input-box">
+            <input type="text" placeholder="Type here..." name="hobbies" id="hobbies" class="input">
+        </div>
+        <br>
+
+        <label for="making-friends">Do you find any difficulty in making friends?</label>
+        <br>
+        <div class="column">
+            <div class="select-box">
+                <select id="making-friends">
+                    <option value="" hidden>--select option--</option>
+                    <option>Yes, frequently</option>
+                    <option>Yes, occasionally</option>
+                    <option>No, not at all</option>
+                </select>
+            </div>
+        </div>
+        <br>
+
+        <label for="appearance">How do you feel about your appearance or the way you look?</label>
+        <div class="input-box">
+            <input type="text" placeholder="Type here..." name="appearance" id="appearance" class="input">
+        </div>
+        <br>
+
+        <label for="education">Do you feel that mental health education should be more integrated into the school curriculum?</label>
+        <br>
+        <div class="gender-box">
+            <input id="yes-education" type="radio" name="integrate" value="1">
+            <label for="yes-education">Yes</label>
+            <input id="no-education" type="radio" name="integrate" value="2">
+            <label for="no-education">No</label>
+        </div>
+
+        <div class="submit">
+            <button type="reset">Reset</button>
+            <button> <a href="Final Land.html">Submit</a></button>
+        </div>
+    </form>
+</section>
+</body>
+</html>

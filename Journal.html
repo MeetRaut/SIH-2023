@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Journal</title>
+    <link rel="stylesheet" href="../Css/Final Journal.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <nav>
+            <img width="100px" height="100px" src="../Images/Final Logo.png"  alt="logo" />
+            <ul>
+              <a href="../../index.html"><li>Home</li></a>
+              <a href="Final Activitys.html"><li>Activities</li></a>
+              <a href="Final Journal.html"><li>Daily Journal</li></a>
+              <a href="Final Survey.html"><li>Self-Assessment</li></a>
+              <a href="Final Doc-Talk.html"><li>Doc Talk</li></a>
+              <a href="Final public-chat.html"><li>Chats</li></a>
+            </ul>
+            <div class="authbutton">
+              <a href="Final Login.html"><button id="login">Login</button></a>
+              <a href="Final Sign-up.html"><button id="signup">Sign-up</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mood">
+        <h2 class="moodText">Select Today's Mood</h2>
+        <!-- Mood selection buttons -->
+        <div class="mood-buttons">
+            <div class="mood-button" style="background-color: #6abe67;"><img class="imgMood" src="../Images/moodVeryHappy.jpg" alt="Very Happy"></div> <!-- Very Happy -->
+            <div class="mood-button" style="background-color: #a0c75f;"><img class="imgMood" src="../Images/moodHappy.jpg" alt="Happy"></div> <!-- Happy -->
+            <div class="mood-button" style="background-color: #fec560;"><img class="imgMood" src="../Images/moodNeutral.jpg" alt="Neutral"></div> <!-- Neutral -->
+            <div class="mood-button" style="background-color: #f4a25a;"><img class="imgMood" src="../Images/moodSad.jpg" alt="Sad"></div> <!-- Sad -->
+            <div class="mood-button" style="background-color: #ed3b51;"><img class="imgMood" src="../Images/moodVerySad.jpg" alt="VerySad"></div> <!-- Very Sad -->
+        </div>
+    </div>
+
+    <div class="calendar-and-journal">
+        <div class="calendar">
+            <h2 class="CaJ">Calendar</h2>
+            <!-- Calendar will be dynamically generated here -->
+        </div>
+
+        <div class="journal">
+            <!-- Journal -->
+            <h2 class="CaJ">Daily Journal</h2>
+            <textarea id="journal-text" rows="10" cols="40" placeholder="How was your day..."></textarea>
+            <br>
+            <button onclick="saveJournal()">Save</button>
+        </div>
+    </div>
+
+    <script src="../Javascript/Final Journal.js"></script>
+</body>
+</html>

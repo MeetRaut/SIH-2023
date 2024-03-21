@@ -1,0 +1,243 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+  font-family: 'Roboto',sans-serif;
+  box-sizing: border-box;
+ transition:6s;
+animation-direction:left ;
+}
+a{
+  color: inherit;
+}
+nav img{
+  margin: 0 20px;
+}
+nav {
+  width: 100vw;
+  height: 100px;
+  background-color: rgb(93, 42, 55);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  text-align: center;
+  color: white;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  
+}
+nav ul li::after{
+  content: '';
+  background-color:  rgb(201,124,144);
+  
+  height: 3px;
+  width: 0;
+  display: block;
+  margin: auto;
+}
+nav ul li:hover::after{
+ transition: 0.5s ease-in-out;
+  width: 100%;
+}
+.authbutton button{
+  width: 150px;
+  height: 40px;
+  margin: 0px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(201,124,144);
+  
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+}
+.authbutton button:hover{
+  background-color: #f1dccd;
+  scale: 1.1;
+  color: black;
+}
+
+body{
+
+  width: 100vw;
+  background-color: #f1dccd;
+  align-items: center;
+  justify-content: center;
+  height: 100vw;
+  color: white;
+  overflow: hidden;
+  margin: 0;
+}
+.quiz-container{
+  margin-top: 2vw;
+  background-color: rgb(147, 77, 93);
+  box-shadow: 0 0 10px 2px rgba(72, 53, 53, 0.1);
+  width: 600px;
+  margin-left: 30vw;
+  max-height: 35vw;
+  border-radius: 20px;
+  border:rgb(147, 77, 93) ;
+
+}
+.quiz-header{
+  padding: 2vw;
+}
+h2{
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+ul li{
+  font-size: 1.2rem;
+ 
+}
+li{
+  display: flex;
+   align-items: center;
+   padding-bottom: 1vw;
+}
+ul li label{
+  cursor: pointer;
+}
+
+#quiztime
+{
+  margin-top: 2vw;
+  text-align: center;
+  color: black;
+  padding-top: 2vw;
+  font-size: 4vw;
+  padding-left: 1vw;
+}
+
+input[type=checkbox] {
+  margin: 4px 0 0;
+  line-height: normal;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+
+#prev
+{
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  padding-bottom: 60px;
+  border-radius: 100%;
+ 
+}
+
+.next button {
+  --color: rgb(207,124,144);
+  
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 10px;
+  margin-left: 10vh;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 19px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+ }
+ 
+ .next  button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+ }
+ 
+ .next button:hover {
+  color: #fff;
+ }
+ 
+ .next button:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+ }
+ 
+ .next button:hover:before {
+  top: -30px;
+  left: -30px;
+ }
+ 
+ .next  button:active:before {
+  background: rgb(221, 174, 185);
+  transition: background 0s;
+ }
+.container {
+  --input-focus: #2d8cf0;
+  --input-out-of-focus: #ccc;
+  --bg-color: #fff;
+  --bg-color-alt: #666;
+  --main-color: #323232;
+  position: relative;
+  cursor: pointer;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  box-shadow: 4px 4px var(--main-color);
+  background-color: var(--input-out-of-focus);
+  transition: all 0.3s;
+  margin-right: 20px;
+ 
+}
+
+.container input:checked ~ .checkmark {
+  background-color: var(--input-focus);
+}
+
+.checkmark:after {
+  content: "";
+  width: 7px;
+  height: 15px;
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  display: none;
+  border: solid var(--bg-color);
+  border-width: 0 2.5px 2.5px 0;
+  transform: rotate(45deg);
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
