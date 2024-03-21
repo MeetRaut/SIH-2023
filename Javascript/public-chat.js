@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
             displayMessage('user', message);
             // Simulated delay and reply
             setTimeout(() => {
-                displayMessage('other', 'I\'m here to listen. How can I assist you further?');
+                displayMessage('other', "That's Great");
             }, 1000);
             messageInput.value = '';
         }
