@@ -184,13 +184,15 @@ nav ul li:hover::after{
   font-size: 15px;
   color: white;
 }
-.mascot-img{
+.mascot-img {
   transform: scaleX(-1);
-  width: 600px;
+  /*width: 600px;*/
+  height: 500px;
 }
-.mascot-img2{
+.mascot-img2 {
   transform: scaleX(1);
-  width :600px;
+  /*width: 600px;*/
+  height: 500px;
 }
 .final{
   display: flex;
