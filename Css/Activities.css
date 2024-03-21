@@ -95,8 +95,9 @@ nav ul li:hover::after{
 .text h1 {
   font-size: 60px;
 }
+
 .activity-text{
-  animation: rainbow-text 5s linear infinite;
+  animation: rainbow-text 3s linear infinite;
   margin: 10px 0px;
   font-weight: bold;
 }
@@ -121,7 +122,7 @@ nav ul li:hover::after{
   margin-bottom: 0px;
 }
 .image {
-  height: 80vh;
+  height: 79vh;
   padding: 10px;
   border-radius: 30px;
   margin-left: 5px;
