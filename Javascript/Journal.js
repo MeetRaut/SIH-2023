@@ -18,8 +18,8 @@ function showJournal() {
 function createCalendar(year, month) {
     var today = new Date();
     var firstDay = new Date(year, month, 1);
-    var lastDay = new Date(year, month + 1, 0);
-    var daysInMonth = lastDay.getDate();
+    // var lastDay = new Date(year, month + 1, 0);
+    var daysInMonth = 30;
     var startDay = firstDay.getDay();
 
     var calendarTable = document.createElement("table");
