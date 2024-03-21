@@ -89,11 +89,47 @@ section{
     background: var(--main-color);
     cursor: pointer;
     margin: auto;
+    /*position: relative;
+    left: 37%;*/
+    transition: 0.5s ease-in-out;
+}
+.btn:hover{
+    scale: 1.1;
+}
+
+.btn-hero{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: black;
+    background: var(--main-color);
+    cursor: pointer;
+    margin: auto;
     position: relative;
     left: 37%;
     transition: 0.5s ease-in-out;
 }
-.btn:hover{
+
+.btn-hero:hover{
+    scale: 1.1;
+}
+
+.btn-blog{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: black;
+    background: var(--main-color);
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+    left: 31.5%;
+    transition: 0.5s ease-in-out;
+}
+
+.btn-blog:hover{
     scale: 1.1;
 }
 
@@ -188,8 +224,8 @@ section{
     padding: 2rem 0;
 }
 .review .box-container .box .user{
-    height: 7rem;
-    width: 7rem;
+    height: 8rem;
+    width: 8rem;
     border-radius: 50%;
     object-fit: cover;
 }
