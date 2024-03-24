@@ -1,9 +1,6 @@
 # SIH-2023
 
-## Website: 
-```bash
-https://meetraut.github.io/SIH-2023/
-```
+This site was built using [GitHub Pages](https://meetraut.github.io/SIH-2023/). 
 
 ## PROBLEM STATEMENT: 
 Mental health and well-being surveillance, assessment and tracking solution among children.
